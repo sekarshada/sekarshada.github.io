@@ -50,7 +50,7 @@ export default function SectionHeader({ project }) {
             <img
               src={project.hero.image}
               alt={project.hero.title}
-              className="rounded-[20px] border border-white/10 w-1/2 object-cover"
+              className="rounded-[20px]  w-full object-cover"
             />
           </div>
   

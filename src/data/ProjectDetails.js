@@ -2,6 +2,7 @@ import HomePage from "../assets/HomePage.png";
 import MarketAR from "../assets/Market AR - Navigation.png";
 import MarketList from "../assets/MarketAR - Lists.png";
 import MarketListPage from "../assets/Market VR Listing Page.png";
+import Thumbnail from "../assets/Thumbnail detail.png"
 
 const ProjectDetails = [
 {
@@ -28,7 +29,7 @@ const ProjectDetails = [
       timeline: "8 weeks",
       team: "4",
     },
-    image: HomePage
+    image: Thumbnail
   },
 
   hook: {

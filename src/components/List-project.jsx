@@ -1,18 +1,23 @@
+import HomePage from "../assets/Thumbnails wide.png";
+import MarketAR from "../assets/Market AR - Navigation.png";
+import MarketList from "../assets/MarketAR - Lists.png";
+import MarketListPage from "../assets/Market VR Listing Page.png";
+
 export default function Projects() {
     const projects = [
       {
-        title: "HealthSync Mobile",
-        image: "/project1.jpg",
-        type: "App",
+        title: "MarketMate",
+        image: HomePage,
+        type: "Mobile App",
         href: "market-mate",
-        description: "Improving healthcare accessibility through intuitive mobile design.",
+        description: "Navigating Complexity in Physical Environments through study case in Queen Victoria Market, Melbourne Australia",
       },
-      {
-        title: "Fintech Dashboard",
-        image: "/project2.jpg",
-        type: "Web",
-        description: "Designing a scalable financial platform with clarity and trust.",
-      },
+      // {
+      //   title: "Fintech Dashboard",
+      //   image: "/project2.jpg",
+      //   type: "Web",
+      //   description: "Designing a scalable financial platform with clarity and trust.",
+      // },
     ];
   
     return (
