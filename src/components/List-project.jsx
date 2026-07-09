@@ -1,7 +1,4 @@
 import HomePage from "../assets/Thumbnails wide.png";
-import MarketAR from "../assets/Market AR - Navigation.png";
-import MarketList from "../assets/MarketAR - Lists.png";
-import MarketListPage from "../assets/Market VR Listing Page.png";
 
 export default function Projects() {
     const projects = [

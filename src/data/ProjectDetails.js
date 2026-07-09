@@ -1,7 +1,17 @@
-import HomePage from "../assets/HomePage.png";
+// import HomePage from "../assets/HomePage.png";
 import MarketAR from "../assets/Market AR - Navigation.png";
-import MarketList from "../assets/MarketAR - Lists.png";
-import MarketListPage from "../assets/Market VR Listing Page.png";
+// import MarketList from "../assets/MarketAR - Lists.png";
+// import MarketListPage from "../assets/Market VR Listing Page.png";
+import lofi1 from "../assets/lofi-1.png"
+import lofi2 from "../assets/lofi-2.png"
+import lofi3 from "../assets/lofi-3.png"
+import lofi4 from "../assets/lofi-4.png"
+
+import hifi1 from "../assets/hifi-1.png"
+import hifi2 from "../assets/hifi-2.png"
+import hifi3 from "../assets/hifi-3.png"
+import hifi4 from "../assets/hifi-4.png"
+import hifi5 from "../assets/hifi-5.png"
 import Thumbnail from "../assets/Thumbnail detail.png"
 
 const ProjectDetails = [
@@ -271,29 +281,96 @@ const ProjectDetails = [
 
   solution: {
     intro:
-      "The final concept combines contextual AR guidance with personalised discovery...",
+      "The solution evolved through multiple iterations, progressing from early information architecture sketches to high-fidelity mobile interfaces and finally an augmented reality navigation experience.",
   
-    products: [
+    phases: [
+      // {
+      //   title: "Concept Exploration",
+      //   subtitle: "Early Design Thinking",
+  
+      //   description:
+      //     "Before designing interfaces, multiple concepts were explored to determine how visitors should discover stalls, plan journeys, and navigate within the market.",
+  
+      //   items: [
+      //     {
+      //       title: "Journey Recommendation",
+      //       image: "/projects/market-mate/concept-journey.png",
+      //     },
+      //     {
+      //       title: "Personalised Planning",
+      //       image: "/projects/market-mate/concept-plan.png",
+      //     },
+      //     {
+      //       title: "Indoor Navigation",
+      //       image: "/projects/market-mate/concept-navigation.png",
+      //     },
+      //   ],
+      // },
+  
       {
-        title: "MarketAR",
-        image: MarketAR,
-        description: "...",
-        features: [
-          "Directional AR guidance",
-          "Stall information overlay",
-          "Indoor wayfinding",
+        title: "Low-Fidelity Prototype",
+        subtitle: "Wireframing",
+  
+        description:
+          "Wireframes were created to validate information architecture, user flow, and navigation before investing in visual design.",
+  
+        items: [
+          {
+            title: "MarketMatch Recommendation",
+            image: lofi1,
+          },
+          {
+            title: "Custom Tour Builder",
+            image: lofi2,
+          },
+          {
+            title: "Itinerary Planning",
+            image: lofi3,
+          },
+          {
+            title: "Market Browser",
+            image: lofi4,
+          },
         ],
       },
+  
       {
-        title: "MarketMatch",
-        image: MarketList,
-        description: "...",
-        features: [
-          "Preference-based recommendation",
-          "Optimised route planning",
-          "Personalised discovery",
+        title: "High-Fidelity Mobile Design",
+        subtitle: "Final UI",
+  
+        description:
+          "The interface was refined using the Queen Victoria Market visual identity, improving readability, visual hierarchy, and overall user experience.",
+  
+        items: [
+          {
+            title: "AR Navigation",
+            image: MarketAR,
+          },
+          {
+            title: "Market Browser",
+            image: hifi4,
+          },
+          {
+            title: "Stall Details",
+            image: hifi5,
+          },
         ],
       },
+  
+      // {
+      //   title: "Augmented Reality Navigation",
+      //   subtitle: "Final Prototype",
+  
+      //   description:
+      //     "The final prototype combines AR navigation with contextual information overlays, allowing visitors to navigate confidently while learning about nearby stalls.",
+  
+      //   items: [
+      //     {
+      //       title: "Live AR Navigation",
+      //       image: "/projects/market-mate/ar.png",
+      //     },
+      //   ],
+      // },
     ],
   },
   journey: [
@@ -423,29 +500,42 @@ const ProjectDetails = [
   },
 
   reflection: {
+    intro:
+      "Designing for complex physical environments revealed broader considerations beyond usability alone. These reflections highlight important trade-offs and ethical questions that should shape future iterations of the system.",
+  
     quote:
-      "Design is not about adding more features—it is about understanding the right problem deeply enough that the solution becomes obvious.",
+      "Great design is not only about solving today's problems, but also anticipating tomorrow's consequences.",
   
     learnings: [
       {
-        title: "Research Before Solutions",
+        title: "Inclusive by Design",
+  
         description:
-          "The most valuable outcome of this project was not the AR interface itself, but uncovering the underlying navigation challenges that users experience in dynamic physical environments.",
+          "AR navigation offers an intuitive experience for many users, but it also assumes access to modern devices and a certain level of digital confidence. Future iterations should consider complementary low-tech alternatives to ensure accessibility for a broader audience.",
       },
   
       {
-        title: "Constraints Shape Better Design",
+        title: "Balancing Personalisation and Fairness",
+  
         description:
-          "Environmental factors such as changing stall layouts, crowd density, and diverse visitor backgrounds became design opportunities rather than limitations.",
+          "Recommendation systems can improve discovery, yet they also risk reinforcing the popularity of already well-known stalls. Designing for equitable visibility remains an important challenge for supporting the entire market ecosystem.",
       },
   
       {
-        title: "Evidence-Driven Decision Making",
+        title: "Privacy Requires Deliberate Design",
+  
         description:
-          "Every major design decision—from AR navigation to personalised recommendations—was directly informed by qualitative findings instead of assumptions.",
+          "Personalised experiences rely on contextual information such as location, preferences, and browsing behaviour. Protecting this data through transparent and privacy-conscious design should be treated as a core requirement rather than an afterthought.",
+      },
+  
+      {
+        title: "Technology Has Practical Boundaries",
+  
+        description:
+          "The effectiveness of AR navigation depends on reliable localisation, compatible devices, and stable connectivity. These real-world constraints remind us that successful experiences are shaped as much by technical feasibility as by interface design.",
       },
     ],
-  },
+  }
 
 },
 ];

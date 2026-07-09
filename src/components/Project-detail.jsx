@@ -14,6 +14,7 @@ import { Users, MapPinned, LayoutGrid, CheckCircle2 } from "lucide-react";
 import SectionConstraints from "./case-study/Project-detail-constrain";
 import SectionImpact from "./case-study/Project-detail-impact";
 import SectionValidation from "./case-study/Project-detail-validation";
+import SectionReflection from "./case-study/Project-detail-reflection";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -40,6 +41,7 @@ export default function ProjectDetail() {
       <SectionConstraints project={project} />
       <SectionImpact project={project} />
       <SectionValidation project={project} />
+      <SectionReflection project={project} />
 
     </main>
   );
