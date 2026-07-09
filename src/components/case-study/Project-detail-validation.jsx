@@ -28,7 +28,7 @@ export default function SectionValidation({ project }) {
 
         {/* Activities */}
 
-        <div className="space-y-8">
+        <div className="grid md:grid-cols-2 gap-8">
 
           {project.validation.activities.map((activity, index) => (
 
