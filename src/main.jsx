@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import CaseStudy from "./pages/Projects.jsx";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/case-study/market-navigation" element={<CaseStudy />} /> */}
         <Route path="/case-study/:slug" element={<CaseStudy />} />
-
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </Router>
   );

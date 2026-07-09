@@ -1,5 +1,5 @@
 {
-  "name": "gabriellasekar.github.io",
+  "name": "sekarshada.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,10 +12,13 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@iconify/react": "^6.0.2",
     "@sanity/client": "^7.20.0",
+    "@tabler/icons-react": "^3.44.0",
     "lucide-react": "^1.23.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-icons": "^5.7.0",
     "react-router-dom": "^7.14.0"
   },
   "devDependencies": {
