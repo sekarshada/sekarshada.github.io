@@ -1,10 +1,11 @@
-import HomePage from "../assets/Thumbnails wide.png";
+import MarketMate from "../assets/Thumbnails wide.png";
+import XR from "../assets/Thumbnail XR wide.png"
 import { Link } from "react-router-dom";
 export default function Projects() {
   const projects = [
     {
       title: "XR Physiotherapy Training",
-      image: HomePage,
+      image: XR,
       type: "Mixed Reality Research",
       href: "xr-physiotherapy",
       description:
@@ -12,8 +13,8 @@ export default function Projects() {
     },
     {
       title: "MarketMate",
-      image: HomePage,
-      type: "Mobile App",
+      image: MarketMate,
+      type: "Mobile App Design Product",
       href: "market-mate",
       description:
         "Navigating Complexity in Physical Environments through study case in Queen Victoria Market, Melbourne Australia",
@@ -23,7 +24,7 @@ export default function Projects() {
   return (
     <section className="bg-black px-8 md:px-20 py-32">
       {/* Title */}
-      <h2 className="text-3xl md:text-4xl text-white font-poppins mb-20">
+      <h2 className="text-3xl md:text-4xl text-white font-poppins font-semibold mb-20">
         Selected Projects
       </h2>
 
