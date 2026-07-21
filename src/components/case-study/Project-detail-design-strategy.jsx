@@ -11,11 +11,11 @@ export default function ProjectDesignStrategy({ project }) {
             Design Strategy
           </p>
   
-          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+          <h2 className="text-4xl md:text-3xl font-semibold mb-6">
             Translating Insights into Design
           </h2>
   
-          <p className="text-gray-400 text-lg max-w-3xl mb-20">
+          <p className="text-gray-400 text-lg mb-20">
             Every design feature was directly derived from a research insight,
             ensuring that solutions addressed genuine user needs rather than
             assumptions.
@@ -50,7 +50,7 @@ export default function ProjectDesignStrategy({ project }) {
                       Insight
                     </p>
   
-                    <p className="text-xl font-medium">
+                    <p className="text-lg font-medium">
                       {item.insight}
                     </p>
   
@@ -79,7 +79,7 @@ export default function ProjectDesignStrategy({ project }) {
                     </p>
   
                     <p
-                      className="text-xl font-semibold"
+                      className="text-lg font-semibold"
                       style={{
                         color: project.theme.primary,
                       }}

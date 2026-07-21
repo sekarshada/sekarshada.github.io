@@ -9,11 +9,11 @@ export default function SectionDesignDecision({ project }) {
           Design Decisions
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+        <h2 className="text-4xl md:text-3xl font-semibold mb-6">
           Why This Solution?
         </h2>
 
-        <p className="text-gray-400 text-lg max-w-3xl mb-16">
+        <p className="text-gray-400 text-lg max-w-4xl mb-16">
           Multiple concepts were explored before selecting the final direction.
           Each option was evaluated against user needs, environmental
           constraints, and long-term scalability.
@@ -23,7 +23,7 @@ export default function SectionDesignDecision({ project }) {
           {/* Alternatives */}
 
           <div>
-            <h3 className="text-2xl font-semibold text-red-400 mb-8">
+            <h3 className="text-xl font-semibold text-red-400 mb-8">
               Alternatives Considered
             </h3>
 
@@ -36,7 +36,7 @@ export default function SectionDesignDecision({ project }) {
                     borderColor: "rgba(255,80,80,.2)",
                   }}
                 >
-                  <h4 className="font-semibold text-xl mb-3">{item.title}</h4>
+                  <h4 className="font-semibold text-lg mb-3">{item.title}</h4>
 
                   <p className="text-gray-400">{item.reason}</p>
                 </div>
@@ -48,7 +48,7 @@ export default function SectionDesignDecision({ project }) {
 
           <div>
             <h3
-              className="text-2xl font-semibold mb-8"
+              className="text-xl font-semibold mb-8"
               style={{
                 color: project.theme.primary,
               }}
@@ -67,7 +67,7 @@ export default function SectionDesignDecision({ project }) {
                   }}
                 >
                   <h4
-                    className="text-xl font-semibold mb-3"
+                    className="text-lg font-semibold mb-3"
                     style={{
                       color: project.theme.primary,
                     }}
@@ -90,7 +90,7 @@ export default function SectionDesignDecision({ project }) {
             borderColor: project.theme.primarySoft,
           }}
         >
-          <h3 className="text-2xl font-semibold mb-8">Trade-offs</h3>
+          <h3 className="text-xl font-semibold mb-8">Trade-offs</h3>
 
           <div className="grid md:grid-cols-3">
             {project.designDecision.tradeoffs.map((item, index) => (

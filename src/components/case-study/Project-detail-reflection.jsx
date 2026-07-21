@@ -13,7 +13,7 @@ export default function SectionReflection({ project }) {
           Design Reflections
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+        <h2 className="text-4xl md:text-3xl font-semibold mb-6">
           Designing Responsibly
         </h2>
 
@@ -28,7 +28,7 @@ export default function SectionReflection({ project }) {
             boxShadow: `0 0 40px ${project.theme.glow}`,
           }}
         >
-          <p className="text-2xl md:text-4xl leading-tight font-semibold text-white">
+          <p className="text-xl md:text-4xl leading-tight font-semibold text-white">
             “{project.reflection.quote}”
           </p>
         </div>
@@ -47,13 +47,13 @@ export default function SectionReflection({ project }) {
                 }}
               >
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-7"
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mb-7"
                   style={{ background: project.theme.primarySoft }}
                 >
                   <Icon size={26} style={{ color: project.theme.primary }} />
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-xl font-semibold mb-4">
                   {item.title}
                 </h3>
 

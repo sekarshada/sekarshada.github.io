@@ -1,4 +1,6 @@
 export default function SectionConstraints({ project }) {
+  if (!project.constraints) return null;
+
     return (
       <section className="px-8 md:px-20 py-10">
         <div className="max-w-7xl mx-auto">
@@ -10,7 +12,7 @@ export default function SectionConstraints({ project }) {
             Real World Considerations
           </p>
   
-          <h2 className="text-4xl md:text-5xl font-semibold mb-16">
+          <h2 className="text-4xl md:text-3xl font-semibold mb-16">
             Constraints & Challenges
           </h2>
   
@@ -26,7 +28,7 @@ export default function SectionConstraints({ project }) {
               }}
             >
               <h3
-                className="text-2xl font-semibold mb-8"
+                className="text-xl font-semibold mb-8"
                 style={{ color: project.theme.primary }}
               >
                 Project Constraints
@@ -49,7 +51,7 @@ export default function SectionConstraints({ project }) {
   
             <div className="rounded-3xl border border-red-400/20 bg-white/[0.04] backdrop-blur-xl p-10">
   
-              <h3 className="text-2xl font-semibold text-red-400 mb-8">
+              <h3 className="text-xl font-semibold text-red-400 mb-8">
                 Potential Risks
               </h3>
   

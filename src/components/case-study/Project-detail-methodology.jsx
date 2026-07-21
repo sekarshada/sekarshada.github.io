@@ -15,11 +15,11 @@ export default function SectionHeader({ project }) {
             Research Process
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+          <h2 className="text-4xl md:text-3xl font-semibold mb-6">
             How We Approached This
           </h2>
 
-          <p className="text-gray-400 text-lg max-w-3xl leading-relaxed mb-16">
+          <p className="text-gray-400 text-lg leading-relaxed mb-16">
             {project.methods.intro}
           </p>
 
@@ -55,7 +55,7 @@ export default function SectionHeader({ project }) {
                   }}
                 >
                   <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8"
+                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-8"
                     style={{
                       background: project.theme.primarySoft,
                     }}
@@ -77,7 +77,7 @@ export default function SectionHeader({ project }) {
                     {item.subtitle}
                   </p>
 
-                  <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+                  <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
 
                   <p className="text-gray-400 leading-7">{item.description}</p>
                 </div>
@@ -102,7 +102,7 @@ export default function SectionHeader({ project }) {
             }}
           >
             <h3
-              className="text-2xl font-semibold mb-8"
+              className="text-xl font-semibold mb-8"
               style={{
                 color: project.theme.primary,
               }}

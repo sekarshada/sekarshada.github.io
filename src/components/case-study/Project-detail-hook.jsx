@@ -1,4 +1,5 @@
 export default function SectionHook({ project }) {
+  if (!project.hook) return null;
   return (
     <div>
       <section className="px-8 md:px-20">
@@ -10,7 +11,7 @@ export default function SectionHook({ project }) {
             Problem Space
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+          <h2 className="text-4xl md:text-3xl font-semibold mb-6">
             Expectation vs Reality
           </h2>
 
@@ -41,7 +42,7 @@ export default function SectionHook({ project }) {
             >
               <div className="group flex items-center gap-4">
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 text-2xl font-bold"
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-xl font-bold"
                   style={{
                     background: project.theme.primarySoft,
                     color: project.theme.primary,
@@ -51,7 +52,7 @@ export default function SectionHook({ project }) {
                 </div>
 
                 <h3
-                  className="text-2xl font-semibold mb-4"
+                  className="text-xl font-semibold mb-4"
                   style={{ color: project.theme.primary }}
                 >
                   Expectation
@@ -95,7 +96,7 @@ export default function SectionHook({ project }) {
             >
               <div className="group flex items-center gap-4">
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 text-2xl font-bold"
+                  className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 text-xl font-bold"
                   style={{
                     background: "rgba(239,68,68,0.12)",
                     color: "#ef4444",
@@ -104,7 +105,7 @@ export default function SectionHook({ project }) {
                   ✕
                 </div>
 
-                <h3 className="text-2xl font-semibold text-red-400 mb-4">
+                <h3 className="text-xl font-semibold text-red-400 mb-4">
                   Reality
                 </h3>
               </div>
@@ -133,7 +134,7 @@ export default function SectionHook({ project }) {
           </p>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+          <h2 className="text-4xl md:text-3xl font-semibold mb-6">
             A Look Into the Data
           </h2>
 
@@ -147,7 +148,7 @@ export default function SectionHook({ project }) {
 
             <div>
               <h3
-                className="text-2xl font-semibold mb-8"
+                className="text-xl font-semibold mb-8"
                 style={{ color: project.theme.primary }}
               >
                 Key Findings
@@ -178,13 +179,13 @@ export default function SectionHook({ project }) {
                       {/* Metric */}
 
                       <div
-                        className="w-20 h-20 rounded-2xl flex items-center justify-center shrink-0"
+                        className="w-20 h-20 rounded-xl flex items-center justify-center shrink-0"
                         style={{
                           background: project.theme.primarySoft,
                         }}
                       >
                         <span
-                          className="text-2xl font-bold"
+                          className="text-xl font-bold"
                           style={{
                             color: project.theme.primary,
                           }}
@@ -196,7 +197,7 @@ export default function SectionHook({ project }) {
                       {/* Text */}
 
                       <div>
-                        <h4 className="text-2xl font-semibold">{stat.title}</h4>
+                        <h4 className="text-xl font-semibold">{stat.title}</h4>
 
                         <p className="text-gray-400 mt-2 leading-relaxed">
                           {stat.description}
@@ -212,7 +213,7 @@ export default function SectionHook({ project }) {
 
             <div>
               <h3
-                className="text-2xl font-semibold mb-8"
+                className="text-xl font-semibold mb-8"
                 style={{ color: project.theme.primary }}
               >
                 Voice of Users
@@ -234,7 +235,7 @@ export default function SectionHook({ project }) {
                       boxShadow: `0 0 40px ${project.theme.glow}`,
                     }}
                   >
-                    {/* <div className="text-5xl text-white/10x">"</div> */}
+                    {/* <div className="text-3xl text-white/10x">"</div> */}
 
                     <p className="italic text-lg text-gray-300 leading-8">
                       {quote}

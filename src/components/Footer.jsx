@@ -11,7 +11,7 @@ export default function Footer() {
             Let's Connect
           </p>
 
-          <h2 className="text-5xl font-semibold text-white mb-6">
+          <h2 className="text-3xl font-semibold text-white mb-6">
             Building meaningful technology,
             <br />
             one experience at a time
@@ -64,7 +64,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-5">
           <div>
-            <h3 className="text-2xl font-semibold text-white">
+            <h3 className="text-xl font-semibold text-white">
               Gabriella Sekar Shada
             </h3>
 

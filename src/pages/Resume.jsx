@@ -17,7 +17,7 @@ export default function Resume() {
                 Curriculum Vitae
               </p>
 
-              <h1 className="text-5xl font-semibold mt-2">
+              <h1 className="text-3xl font-semibold mt-2">
                 Gabriella Sekar Shada
               </h1>
             </div>

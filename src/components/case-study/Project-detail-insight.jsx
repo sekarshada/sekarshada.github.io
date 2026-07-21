@@ -11,7 +11,7 @@ export default function ProjectInsights({ project }) {
           Research Insights
         </p>
 
-        <h2 className="text-4xl md:text-5xl font-semibold mb-6">
+        <h2 className="text-4xl md:text-3xl font-semibold mb-6">
           Key Insights
         </h2>
 

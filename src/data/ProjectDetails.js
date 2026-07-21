@@ -13,6 +13,9 @@ import hifi3 from "../assets/hifi-3.png"
 import hifi4 from "../assets/hifi-4.png"
 import hifi5 from "../assets/hifi-5.png"
 import Thumbnail from "../assets/Thumbnail detail.png"
+import ThumbnailXR from "../assets/Thumbnail XR.png"
+import heatmap from "../assets/heatmap.png"
+import sensorMatrix from "../assets/sensor-matrix.png"
 
 const ProjectDetails = [
 {
@@ -27,6 +30,8 @@ const ProjectDetails = [
   hero: {
     type: "UX Research Case Study",
     title: "Navigating Complexity in Physical Environments",
+    url:"https://www.figma.com/proto/OfwBsPOCkLJH81ClxXtNCc/Design-Concept?page-id=2%3A2&node-id=194-463&p=f&viewport=-9059%2C314%2C0.36&t=m8Zxv58bNMC4iHKc-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=194%3A463",
+    link:"Figma Prototype",
     description:
       "Helping visitors navigate a 600+ stall market where spatial cues are inconsistent and layouts change frequently.",
     impact: [
@@ -171,6 +176,7 @@ const ProjectDetails = [
     },
   ],
   participants: {
+    title: "Participants Selection",
     intro:
       "Participants were selected to reflect the diversity of visitors and stakeholders within the market ecosystem.",
   
@@ -469,6 +475,9 @@ const ProjectDetails = [
 
  
   validation: {
+    eyebrow: "Next Phase",
+    title: "Validation Plan",
+    icon: "check",
     intro:
       "The proposed solution has not yet been evaluated with end users. Future work will focus on validating usability, navigation performance, and overall user experience.",
   
@@ -538,6 +547,483 @@ const ProjectDetails = [
   }
 
 },
+
+{
+  slug: "xr-physiotherapy",
+
+  theme: {
+    primary: "#8EE6D1",
+    primarySoft: "rgba(142,230,209,0.15)",
+    glow: "rgba(142,230,209,0.35)",
+  },
+
+  hero: {
+    type: "Mixed Reality Research Project",
+    title:
+      "Social Robot & Visualisation for Medical Training",
+    description:
+      "Back pain is the world's leading cause of disability, yet physiotherapy training still relies heavily on peer practice and verbal feedback, lacking the precision needed to develop fine tactile control and clinical empathy. This project presents a Mixed Reality training system for spinal mobilisation 🔴 Pressure sensing, 🤖 Social robot (Furhat) and 🖐️ Ghost hand guidance. The study shows that immersive training systems can maintain stable cognitive load across different feedback configurations, indicating good usability and integration. While all feedback types were perceived as clear and helpful, presenting too many cues simultaneously increased cognitive effort, highlighting the importance of timing and simplicity in interface design. The inclusion of a socially expressive robot enhanced engagement and encouraged patient-centred awareness, supporting empathy without adding mental load.",
+    image: ThumbnailXR,
+    url:"https://github.com/sekarshada/SpinalLog_Quest3",
+    link:"Github",
+    // impact: [
+    //   "MR-based motor skill training",
+    //   "Pressure and force feedback",
+    //   "Social robot patient simulation",
+    // ],
+    meta: {
+      role: "Researcher & Developer",
+      timeline: "2025 Thesis Project",
+      team: "Supervised Research",
+    },
+  },
+
+  // hook: {
+  //   intro:
+  //     "Physiotherapy training requires students to develop precise motor skills while also responding to patient cues, yet existing training tools often separate technical performance from patient-centred interaction.",
+
+  //   expectation: [
+  //     "Students receive clear feedback on applied pressure",
+  //     "Trainees understand expert hand placement and movement",
+  //     "Patient communication is practiced alongside technical skill",
+  //   ],
+
+  //   reality: [
+  //     "Pressure feedback is often hard to perceive in real time",
+  //     "Expert technique is difficult to observe and reproduce",
+  //     "Patient reactions are rarely embedded into simulator-based practice",
+  //   ],
+  // },
+
+  data: {
+    intro:
+      "The project was grounded in prior work on mixed reality medical training, tangible physiotherapy simulators, haptic feedback, and social robots in learning environments.",
+
+    stats: [
+      {
+        value: "99",
+        title: "Pressure sensing points",
+        description:
+          "An 11×9 pressure matrix captured touch distribution across the lumbar model.",
+      },
+      {
+        value: "8",
+        title: "Magnetometer sensors",
+        description:
+          "MLX90393 sensors supported force-related measurement and interaction feedback.",
+      },
+      {
+        value: "4",
+        title: "Experimental conditions",
+        description:
+          "The study compared MR baseline, pressure feedback, robot feedback, and combined feedback.",
+      },
+    ],
+
+    quotes: [
+      "Physiotherapy skill training depends on both accurate force application and patient communication.",
+      "The system explores how real-time multisensory feedback can support technical learning and empathy-oriented interaction.",
+    ],
+  },
+
+  methods: {
+    intro:
+      "The project combined system development, hardware prototyping, mixed reality integration, and experimental design.",
+
+    items: [
+      {
+        icon: "layout",
+        title: "System Design",
+        subtitle: "MR + sensors + robot",
+        description:
+          "Designed an integrated training environment connecting a physical lumbar model, sensor feedback, MR visuals, and Furhat robot responses.",
+      },
+      {
+        icon: "map",
+        title: "Prototype Integration",
+        subtitle: "Unity + ESP32 + Furhat",
+        description:
+          "Built communication pipelines for pressure sensing, magnetometer data, hand guidance, and robot feedback.",
+      },
+      {
+        icon: "users",
+        title: "Experimental Design",
+        subtitle: "Within-subject study",
+        description:
+          "Prepared a counterbalanced study comparing different feedback combinations for motor learning and patient-centred training.",
+      },
+    ],
+
+    why: [
+      "Connect technical motor-skill feedback with patient communication practice.",
+      "Evaluate whether multisensory feedback can improve training awareness.",
+      "Explore how social robots may support empathy-oriented medical education.",
+    ],
+  },
+
+  participants: {
+    title: "Who I worked with",
+    intro:
+      "The target users are physiotherapy learners who need to practice both physical assessment technique and patient-centred communication.",
+
+      groups: [
+        {
+          emoji: "🧑‍⚕️",
+          title: "2 Physiotherapy Experts",
+          description:
+          "Two senior physiotherapy educators, each with over 18 years of clinical experience and more than 15 years of teaching experience, collaborated throughout the project to validate techniques, refine interaction design, and ensure clinical relevance.",
+        },
+        {
+          emoji: "💻",
+          title: "Technical Supervisor",
+          description:
+            "Provided focused guidance on technical system integration, and the implementation of the interactive training environment.",
+        },
+        {
+          emoji: "🤝",
+          title: "Research Supervisor",
+          description:
+            "Supported the visualisation, mixed reality feedback, broader research direction, interdisciplinary collaboration, study design, physiotherapy integration, and coordination across the project.",
+        },
+      ],
+    
+    rationale:
+      "These groups reflect the learning ecosystem of physiotherapy education: students, instructors, simulated patients, and technology-mediated training environments.",
+  },
+
+  insights: [
+    {
+      title: "Empirical Contribution",
+  
+      evidence: [
+        "Examines how preview guidance and multimodal feedback influence cognitive load, task clarity, and user engagement.",
+        "Compares visual feedback, embodied robot feedback, and combined feedback conditions in an MR physiotherapy training context.",
+      ],
+  
+      interpretation:
+        "The study provides evidence on how different feedback modalities shape learner perception and performance in early-stage XR training systems.",
+  
+      designOpportunity:
+        "Use empirical comparison to identify when visual guidance, robotic cues, or combined feedback are most useful for learning.",
+    },
+  
+    {
+      title: "Theoretical Contribution",
+  
+      evidence: [
+        "Positions preview guidance, real-time visualisation, and embodied robotic feedback as complementary forms of instructional support.",
+        "Frames MR learning as a combination of spatial perception, embodied action, and affective feedback.",
+      ],
+  
+      interpretation:
+        "The project proposes a conceptual understanding of how multisensory feedback may shape perception, attention, and learning in MR environments.",
+  
+      designOpportunity:
+        "Use this framing to reason about how different feedback types support different stages of learning.",
+    },
+  
+    {
+      title: "Methodological Contribution",
+  
+      evidence: [
+        "Combines workload metrics, structured questionnaires, qualitative reflection, and interaction logs.",
+        "Designed for early-stage evaluation of XR learning systems where both usability and learning experience matter.",
+      ],
+  
+      interpretation:
+        "The evaluation framework captures not only whether the system works, but how learners experience, interpret, and respond to feedback.",
+  
+      designOpportunity:
+        "Apply mixed-method evaluation to study cognitive load, engagement, perceived clarity, and learning value together.",
+    },
+  
+    {
+      title: "Artefact Contribution",
+  
+      evidence: [
+        "Integrates Mixed Reality using Unity and Meta Quest 3.",
+        "Uses ESP32-based real-time pressure sensing to capture physical interaction.",
+        "Connects Furhat social robot feedback to the MR training experience.",
+      ],
+  
+      interpretation:
+        "The system contributes a novel integrated platform that combines sensing, MR visualisation, and social robotics for healthcare training.",
+  
+      designOpportunity:
+        "Use the platform as a testbed for studying multimodal feedback and affective simulation in medical education.",
+    },
+  
+    {
+      title: "Design Insight Contribution",
+  
+      evidence: [
+        "Identifies when preview guidance may support preparation before action.",
+        "Shows how real-time visualisation can support correction during action.",
+        "Explores how social cues may influence engagement and patient-centred awareness.",
+      ],
+  
+      interpretation:
+        "The project produces actionable guidance for designing immersive healthcare training systems that balance technical skill feedback with affective learning cues.",
+  
+      designOpportunity:
+        "Translate findings into design guidelines for preview guidance, real-time feedback, and embodied social cues in MR learning.",
+    },
+  ],
+  designStrategy: [
+    {
+      insight: "Students need real-time awareness of applied pressure.",
+      principle:
+        "Feedback should be visible at the moment of physical interaction.",
+      feature: "Pressure Heatmap Overlay",
+    },
+    {
+      insight: "Expert technique is hard to reproduce from instruction alone.",
+      principle:
+        "Expert motion should be spatially embedded into the learning environment.",
+      feature: "Ghost-hand Guidance",
+    },
+    {
+      insight: "Patient response is missing from many simulator-based tasks.",
+      principle:
+        "Training should include affective and communicative feedback.",
+      feature: "Furhat Simulated Patient",
+    },
+  ],
+
+  designDecision: {
+    alternatives: [
+      {
+        title: "Screen-based Feedback",
+        reason:
+          "Separated feedback from the physical action and increased attention switching.",
+      },
+      {
+        title: "Pure VR Simulation",
+        reason:
+          "Reduced connection to the tactile physical simulator and real hand interaction.",
+      },
+      {
+        title: "Instructor-only Feedback",
+        reason:
+          "Useful but difficult to scale and not always available during independent practice.",
+      },
+    ],
+
+    chosen: [
+      {
+        title: "Mixed Reality Overlay",
+        reason:
+          "Keeps feedback spatially aligned with the physical lumbar simulator.",
+      },
+      {
+        title: "Pressure + Robot Feedback",
+        reason:
+          "Supports both motor learning and patient-centred awareness.",
+      },
+    ],
+
+    tradeoffs: [
+      "Requires headset familiarity and careful calibration.",
+      "Hardware integration adds technical complexity.",
+      "Robot responses must be designed carefully to avoid distraction.",
+    ],
+  },
+
+  journeyMeta: {
+    eyebrow: "Research Workflow",
+    title: "From Requirements to Experimental Study",
+    description:
+      "The project followed an iterative research and development process where technical implementation, expert consultation, and validation informed the final experimental setup.",
+    type: "workflow",
+  },
+  
+  journey: [
+    {
+      stage: "Requirements",
+      action: "Understand learning needs and define system requirements.",
+      outcome: "Research questions and system specifications",
+    },
+    {
+      stage: "System Design",
+      action: "Design the MR architecture, sensing pipeline, and feedback mechanisms.",
+      outcome: "Technical system architecture",
+    },
+    {
+      stage: "Prototyping",
+      action: "Develop and integrate MR, pressure sensing, and robot components.",
+      outcome: "Working multimodal prototype",
+    },
+    {
+      stage: "Expert Validation",
+      action: "Consult physiotherapy experts and refine the system.",
+      outcome: "Iterative system improvements",
+    },
+    {
+      stage: "User Study",
+      action: "Conduct experimental evaluation with participants.",
+      outcome: "Empirical findings",
+    },
+  ],
+  solution: {
+    intro:
+      "The final prototype integrates a tangible lumbar simulator, custom pressure sensing hardware, mixed reality visualisation, expert motion guidance, and an embodied social robot into a unified physiotherapy training platform. Beyond interface design, the project required the development of real-time sensing, signal processing, and multimodal system integration pipelines.",
+  
+    phases: [
+      {
+        title: "System Architecture",
+        subtitle: "Integrated MR Training Platform",
+  
+        description:
+          "The system connects the physical simulator, ESP32 sensor controller, Unity-based mixed reality application, expert motion capture, and Furhat social robot into a real-time interactive training environment.",
+  
+        items: [
+          {
+            type: "system-diagram",
+            title: "Hardware & Software Pipeline",
+          },
+        ],
+      },
+  
+      {
+        title: "Pressure Sensing Pipeline",
+        subtitle: "Calibration & Real-time Signal Processing",
+  
+        description:
+          "A custom 11×9 pressure sensing matrix captures touch distribution across the lumbar model. Before each session, sensor values are calibrated to establish a stable baseline, while initialization spikes during the first few seconds are discarded. The remaining pressure values are normalised and streamed in real time to generate a stable heatmap within the MR environment.",
+  
+        items: [
+          {
+
+            type: "image-landscape",
+            title: "Pressure Sensor Matrix",
+            image: sensorMatrix
+          }
+        ],
+      },
+  
+      {
+        title: "Expert Motion Guidance",
+        subtitle: "Ghost-hand Demonstration",
+  
+        description:
+          "Expert physiotherapy techniques were captured using Manus Quantum gloves and OptiTrack motion tracking. These recordings were replayed as ghost-hand guidance within mixed reality, allowing learners to observe expert movement directly overlaid on the physical simulator.",
+  
+        items: [
+          {
+            
+                type: "image-landscape",
+                title: "Real-time Heatmap",
+                image: heatmap
+              
+           
+            
+          },
+        ],
+      },
+  
+      {
+        title: "Robot Patient Simulation",
+        subtitle: "Embodied Feedback",
+  
+        description:
+          "A Furhat social robot was integrated as a simulated patient capable of delivering verbal, facial, and behavioural responses based on learner interaction. This extends training beyond technical accuracy by incorporating patient-centred communication and affective feedback.",
+  
+        items: [
+          {
+            // type: "image",
+            // title: "Furhat Patient Responses",
+            // image: "/projects/xr-physiotherapy/furhat.png",
+          },
+        ],
+      },
+    ],
+  },
+  
+  expectedImpact: [
+    {
+      icon: "target",
+      title: "Improve Motor Skill Awareness",
+      description:
+        "Help students understand applied pressure, hand placement, and force distribution more clearly.",
+    },
+    {
+      icon: "heart",
+      title: "Support Patient-centred Training",
+      description:
+        "Encourage students to consider patient comfort and communication during manual assessment.",
+    },
+    {
+      icon: "layers",
+      title: "Advance MR Medical Education",
+      description:
+        "Explore how mixed reality, tangible sensing, and social robots can be combined in healthcare training.",
+    },
+  ],
+
+  validation: {
+    eyebrow: "Evaluation",
+    title: "Experimental Study",
+    icon: "flask",
+    intro:
+      "The integrated mixed reality training system was evaluated through a controlled experimental study to investigate how different guidance and feedback modalities influence learners' experience during physiotherapy training. The evaluation combined quantitative and qualitative methods to capture both measurable outcomes and participant perspectives.",
+    activities: [  
+      {
+        title: "Experimental Design",
+        description:
+          "A within-subject, task-based experiment using a mixed-method approach. Participants completed identical physiotherapy assessment tasks across four experimental conditions, with condition order counterbalanced using a Latin Square to minimise learning and ordering effects.",
+      },
+  
+      {
+        title: "Experimental Variables",
+        description:
+          "The independent variables were the availability of visual pressure feedback and embodied robot feedback, resulting in four experimental conditions: baseline MR, MR with pressure feedback, MR with robot feedback, and MR with combined multimodal feedback.",
+      },
+  
+      {
+        title: "Measurements",
+        description:
+          "The study evaluated perceived workload, task clarity, and user engagement through post-condition questionnaires, supported by qualitative observations, think-aloud sessions, and interaction logs collected throughout the experiment.",
+      },
+  
+      {
+        title: "Research Outcomes",
+        description:
+          "Following the experiment, participants completed a participatory design activity by sketching their ideal future training system. These concepts consistently highlighted preferences for adaptive feedback, personalised guidance, richer patient interaction, and more responsive multimodal learning environments.",
+      },
+    ],
+  },
+
+  reflection: {
+    intro:
+      "This project highlighted the challenge of designing training systems that support technical precision without losing sight of human-centred care.",
+
+    quote:
+      "In healthcare training, good feedback should not only correct technique — it should also cultivate awareness of the person receiving care.",
+
+    learnings: [
+      {
+        title: "Feedback Must Be Carefully Balanced",
+        description:
+          "Multisensory feedback can support learning, but too many signals may increase cognitive load if not designed with restraint.",
+      },
+      {
+        title: "Embodied Learning Matters",
+        description:
+          "The physical simulator remained important because students learn through touch, movement, and spatial awareness, not only through screens.",
+      },
+      {
+        title: "Patient-centred Design Extends Beyond UI",
+        description:
+          "The social robot shifted the system from a purely technical trainer into a more relational learning environment.",
+      },
+      {
+        title: "Integration Is Part of the Research",
+        description:
+          "Building the system revealed that technical feasibility, reliability, and interaction design are deeply connected in MR research.",
+      },
+    ],
+  },
+}
 ];
 
 export default ProjectDetails;

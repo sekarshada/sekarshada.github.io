@@ -26,7 +26,7 @@ export default function Header() {
 
           <span
             className="
-              text-2xl
+              text-xl
               font-semibold
               text-white
               transition-colors

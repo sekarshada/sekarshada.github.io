@@ -2,6 +2,9 @@ import {
     Clock3,
     MapPinned,
     Smile,
+    Target,
+    Heart,
+    Layers,
   } from "lucide-react";
   
   export default function SectionImpact({ project }) {
@@ -9,10 +12,13 @@ import {
       Clock3,
       MapPinned,
       Smile,
+      target: Target,
+      heart: Heart,
+      layers: Layers,
     };
   
     return (
-      <section className="px-8 md:px-20 py-10">
+      <section className="px-8 md:px-20 py-2">
         <div className="max-w-7xl mx-auto">
   
           <p
@@ -22,7 +28,7 @@ import {
             Expected Outcome
           </p>
   
-          <h2 className="text-4xl md:text-5xl font-semibold mb-16">
+          <h2 className="text-4xl md:text-3xl font-semibold mb-16">
             Expected Impact
           </h2>
   
@@ -50,7 +56,7 @@ import {
                 >
   
                   <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
                     style={{
                       background: project.theme.primarySoft,
                     }}
@@ -63,7 +69,7 @@ import {
                     />
                   </div>
   
-                  <h3 className="text-2xl font-semibold mb-3">
+                  <h3 className="text-xl font-semibold mb-3">
                     {item.title}
                   </h3>
   
