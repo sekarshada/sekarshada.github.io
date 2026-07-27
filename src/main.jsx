@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import CaseStudy from "./pages/Projects.jsx";
 import Resume from "./pages/Resume";
+import ScrollToTop from './components/scroll-to-top.jsx';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/case-study/market-navigation" element={<CaseStudy />} /> */}

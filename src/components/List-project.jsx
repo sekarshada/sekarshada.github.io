@@ -22,7 +22,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="bg-black px-8 md:px-20 py-32">
+    <section  id="projects" className="bg-black px-8 md:px-20 py-32">
       {/* Title */}
       <h2 className="text-3xl md:text-4xl text-white font-poppins font-semibold mb-20">
         Selected Projects
