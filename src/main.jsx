@@ -18,7 +18,6 @@ function App() {
         {/* <Route path="/case-study/market-navigation" element={<CaseStudy />} /> */}
         <Route path="/case-study/:slug" element={<CaseStudy />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/exhibition" element={<ExhibitionEngagement />} />
       </Routes>
     </Router>
   );
