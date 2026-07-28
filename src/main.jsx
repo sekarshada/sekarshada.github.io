@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import CaseStudy from "./pages/Projects.jsx";
 import Resume from "./pages/Resume";
 import ScrollToTop from './components/scroll-to-top.jsx';
+import ExhibitionEngagement from "./components/ExhibitionsEngagement";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         {/* <Route path="/case-study/market-navigation" element={<CaseStudy />} /> */}
         <Route path="/case-study/:slug" element={<CaseStudy />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/exhibition" element={<ExhibitionEngagement />} />
       </Routes>
     </Router>
   );

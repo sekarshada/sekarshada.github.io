@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Header from '../components/Header';
 import Projects from '../components/List-project';
 import Footer from '../components/Footer';
+import ExhibitionsEngagement from '../components/ExhibitionsEngagement';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,6 +15,7 @@ function App() {
     <Header/>
     <Hero/>
     <Projects/>
+    <ExhibitionsEngagement />
     <Footer/>
       ..
     </>
