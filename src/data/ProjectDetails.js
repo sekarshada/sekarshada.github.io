@@ -566,34 +566,12 @@ const ProjectDetails = [
     image: ThumbnailXR,
     url:"https://github.com/sekarshada/SpinalLog_Quest3",
     link:"Github",
-    // impact: [
-    //   "MR-based motor skill training",
-    //   "Pressure and force feedback",
-    //   "Social robot patient simulation",
-    // ],
     meta: {
       role: "Researcher & Developer",
       timeline: "2025 Thesis Project",
       team: "Supervised Research",
     },
   },
-
-  // hook: {
-  //   intro:
-  //     "Physiotherapy training requires students to develop precise motor skills while also responding to patient cues, yet existing training tools often separate technical performance from patient-centred interaction.",
-
-  //   expectation: [
-  //     "Students receive clear feedback on applied pressure",
-  //     "Trainees understand expert hand placement and movement",
-  //     "Patient communication is practiced alongside technical skill",
-  //   ],
-
-  //   reality: [
-  //     "Pressure feedback is often hard to perceive in real time",
-  //     "Expert technique is difficult to observe and reproduce",
-  //     "Patient reactions are rarely embedded into simulator-based practice",
-  //   ],
-  // },
 
   data: {
     intro:

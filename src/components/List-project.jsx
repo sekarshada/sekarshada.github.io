@@ -1,5 +1,6 @@
 import MarketMate from "../assets/Thumbnails wide.png";
 import XR from "../assets/Thumbnail XR wide.png"
+import Sesamee from "../assets/sesameecover.png"
 import { Link } from "react-router-dom";
 export default function Projects() {
   const projects = [
@@ -10,6 +11,14 @@ export default function Projects() {
       href: "xr-physiotherapy",
       description:
         "Designing multisensory feedback for physiotherapy training using mixed reality, pressure sensing, and social robots.",
+    },
+    {
+      title: "Sesamee Beads",
+      type: "Web Development",
+      description:
+        "A responsive e-commerce website designed and developed for a handmade bead business, combining a warm visual identity with a streamlined browsing experience.",
+      image: Sesamee,
+      href: "sesamee-beads"
     },
     {
       title: "MarketMate",
